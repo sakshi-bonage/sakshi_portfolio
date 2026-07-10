@@ -41,7 +41,7 @@ class ExperienceSection extends StatelessWidget {
       const ExperienceItem(
         period: '2024 — 2026',
         role: 'Computer Engineering Project Lead',
-        company: 'CSMSS Chh. Shahu College of Engineering',
+        company: 'CSMSS Chh. Shahu College of Polytechnic',
         description:
             'Designed internal algorithm management tool assemblies, directed developer workshops, and engineered responsive cross-platform structural mock projects.',
         technologies: ['Java', 'Python', 'UI Architecture', 'Data Structures'],

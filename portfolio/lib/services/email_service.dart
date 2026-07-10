@@ -19,18 +19,16 @@ class EmailService {
   }) async {
     final response = await http.post(
       Uri.parse(_apiUrl),
-      headers: {
-        'Content-Type': 'application/json',
-        'origin': 'http://localhost',
-      },
+      headers: {'Content-Type': 'application/json'},
       body: jsonEncode({
         'service_id': _serviceId,
         'template_id': _templateId,
         'user_id': _publicKey,
         'template_params': {
-          'name': name,
-          'email': email,
+          'from_name': name,
+          'from_email': email,
           'message': message,
+          'reply_to': email,
         },
       }),
     );
